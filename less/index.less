@@ -59,42 +59,53 @@ html, body {
 
 ///////// Start Here //////////
 
+@easyGrey: rgb(233, 232, 232);
+@hardGrey: rgb(116, 116, 116);
+@borderGrey: 1px solid grey;
+
+.space_flex {
+	display: flex;
+	justify-content: space-between;
+}
+
+.head_margin {
+	margin-top: 3%;
+	margin-left: 3%;
+}
+
 body {
 	margin: 4%;
 
 	nav {
 		display: flex;
-		justify-content: end
+		justify-content: end;
 
 		a {
 			margin: 2%;
 			color: black;
 			text-decoration: none;
 			font-size: 1.2rem;
-			:hover {
+			&:hover {
 				text-decoration: underline;
 			}
 		}
 	}
 
 	header {
-		background-color: rgb(233, 232, 232);
-		display: flex;
-		justify-content: space-between;
+		.space_flex();
 		flex-direction: column;
+		background-color: @easyGrey;
 		border-radius: .5rem;
 
 		img {
 			width: 30%;
 			height: 95%;
-			margin-top: 3%;
-			margin-left: 3%;
+			.head_margin();
 		}
 
 		h1 {
 			font-size: 7.5vw;
-			margin-top: 3%;
-			margin-left: 3%;
+			.head_margin();
 		}
 		
 		h2 {
@@ -113,19 +124,18 @@ body {
 			margin-bottom: 3%;
 			padding-top: 1%;
 			padding-bottom: 1%;
-			background-color: rgb(116, 116, 116);
+			background-color: @hardGrey;
 			color: white;
 			font-size: 1.5vw;
 			border-radius: .5rem;
-			:hover {
+			&:hover {
 				cursor: pointer;
 			}
 		}
 	}
 
 	.middle_section {
-		display: flex;
-		justify-content: space-between;
+		.space_flex();
 		margin-top: 4%;
 
 		.description {
@@ -141,7 +151,7 @@ body {
 		}
 
 		.skills {
-			width: 48%
+			width: 48%;
 
 			h4 {
 				font-size: 2.75vw;
@@ -154,11 +164,11 @@ body {
 				li {
 					padding-top: 3%;
 					padding-bottom: 3%;
-					border-top: 1px solid grey;
-					border-left: 1px solid grey;
-					border-right: 1px solid grey;
-					:last-child {
-						border-bottom: 1px solid grey;
+					border-top: @borderGrey;
+					border-left: @borderGrey;
+					border-right: @borderGrey;
+					&:last-child {
+						border-bottom: @borderGrey;
 					} 
 				}
 			}
@@ -178,32 +188,32 @@ body {
 			width: 100%;
 			margin-top: 2%;
 			margin-bottom: 8%;
-		}
 
-		table, th, td {
-			border-top: 1px solid grey;
-		}
-		
-		th, td {
-			height: 3rem;
-			text-align: center;
-			vertical-align: middle;
-		}
-		
-		th {
-			font-size: 2.55vw;
-		}
-		tr:last-child {
-			border-bottom: 1px solid grey;
-		}
-		
-		tr:nth-child(odd) {
-			background-color: rgb(233, 232, 232);
+			th, td {
+				height: 3rem;
+				text-align: center;
+				vertical-align: middle;
+				border-top: @borderGrey;
+			}
+
+			th {
+				font-size: 2.55vw;
+			}
+
+			tr {
+				&:last-child {
+					border-bottom: @borderGrey;
+				}
+
+				&:nth-child(odd) {
+					background-color: @easyGrey;
+				}
+			}
 		}
 	}
 
 	footer {
-		background-color: rgb(116, 116, 116);
+		background-color: @hardGrey;
 		color: white;
 		text-align: center;
 		padding-top: 1.55rem;
