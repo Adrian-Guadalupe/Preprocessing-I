@@ -134,3 +134,18 @@ html,
 body {
   height: 100%;
 }
+body {
+  vw: 100%;
+  margin: 2%;
+}
+nav {
+  border: 1px solid red;
+  display: flex;
+  justify-content: end;
+}
+a {
+  margin: 2%;
+}
+header {
+  background-color: lightgrey;
+}
