@@ -59,10 +59,16 @@ html, body {
 
 ///////// Start Here //////////
 
+
+
+/// Variables ///
 @easyGrey: rgb(233, 232, 232);
 @hardGrey: rgb(116, 116, 116);
 @borderGrey: 1px solid grey;
 
+
+
+/// Mixins ///
 .space_flex {
 	display: flex;
 	justify-content: space-between;
@@ -73,12 +79,31 @@ html, body {
 	margin-left: 3%;
 }
 
+.mediaFont3 {
+	@media(max-width: 500px){
+		font-size: 3vw;
+	}
+}
+
+.mediaFont4 {
+	@media(max-width: 500px){
+		font-size: 4vw;
+	}
+}
+
+
+
+/// Style ///
 body {
 	margin: 4%;
 
 	nav {
 		display: flex;
 		justify-content: end;
+
+		@media(max-width: 500px){
+			justify-content: space-between;
+		}
 
 		a {
 			margin: 2%;
@@ -112,6 +137,10 @@ body {
 			font-size: 3vw;
 			margin-left: 3%;
 			margin-top: 1%;
+
+			@media(max-width: 500px){
+				font-size: 3.5vw;
+			}
 		}
 		
 		.aboutme {
@@ -131,6 +160,11 @@ body {
 			&:hover {
 				cursor: pointer;
 			}
+
+			@media(max-width: 500px) {
+				width: 33%;
+				font-size: 2.5vw;
+			}
 		}
 	}
 
@@ -143,10 +177,12 @@ body {
 
 			h3 {
 				font-size: 2.75vw;
+				.mediaFont4();
 			}
 
 			p {
 				margin-top: 2%;
+				.mediaFont3();
 			}
 		}
 
@@ -155,6 +191,7 @@ body {
 
 			h4 {
 				font-size: 2.75vw;
+				.mediaFont4();
 			}
 
 			ul {
@@ -167,9 +204,11 @@ body {
 					border-top: @borderGrey;
 					border-left: @borderGrey;
 					border-right: @borderGrey;
+					.mediaFont3();
 					&:last-child {
 						border-bottom: @borderGrey;
 					} 
+					
 				}
 			}
 		}	
@@ -181,6 +220,7 @@ body {
 
 		h5 {
 			font-size: 2.75vw;
+			.mediaFont4();
 		}
 
 		table {
@@ -198,6 +238,14 @@ body {
 
 			th {
 				font-size: 2.55vw;
+
+				@media(max-width: 500px){
+					font-size: 3.5vw;
+				}
+			}
+
+			td {
+				.mediaFont3();
 			}
 
 			tr {

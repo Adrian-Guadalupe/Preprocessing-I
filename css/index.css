@@ -142,12 +142,27 @@ body {
   margin-top: 3%;
   margin-left: 3%;
 }
+@media (max-width: 500px) {
+  .mediaFont3 {
+    font-size: 3vw;
+  }
+}
+@media (max-width: 500px) {
+  .mediaFont4 {
+    font-size: 4vw;
+  }
+}
 body {
   margin: 4%;
 }
 body nav {
   display: flex;
   justify-content: end;
+}
+@media (max-width: 500px) {
+  body nav {
+    justify-content: space-between;
+  }
 }
 body nav a {
   margin: 2%;
@@ -181,6 +196,11 @@ body header h2 {
   margin-left: 3%;
   margin-top: 1%;
 }
+@media (max-width: 500px) {
+  body header h2 {
+    font-size: 3.5vw;
+  }
+}
 body header .aboutme {
   margin: 3%;
 }
@@ -198,6 +218,12 @@ body header button {
 body header button:hover {
   cursor: pointer;
 }
+@media (max-width: 500px) {
+  body header button {
+    width: 33%;
+    font-size: 2.5vw;
+  }
+}
 body .middle_section {
   display: flex;
   justify-content: space-between;
@@ -209,14 +235,29 @@ body .middle_section .description {
 body .middle_section .description h3 {
   font-size: 2.75vw;
 }
+@media (max-width: 500px) {
+  body .middle_section .description h3 {
+    font-size: 4vw;
+  }
+}
 body .middle_section .description p {
   margin-top: 2%;
+}
+@media (max-width: 500px) {
+  body .middle_section .description p {
+    font-size: 3vw;
+  }
 }
 body .middle_section .skills {
   width: 48%;
 }
 body .middle_section .skills h4 {
   font-size: 2.75vw;
+}
+@media (max-width: 500px) {
+  body .middle_section .skills h4 {
+    font-size: 4vw;
+  }
 }
 body .middle_section .skills ul {
   margin-top: 2%;
@@ -229,6 +270,11 @@ body .middle_section .skills ul li {
   border-left: 1px solid grey;
   border-right: 1px solid grey;
 }
+@media (max-width: 500px) {
+  body .middle_section .skills ul li {
+    font-size: 3vw;
+  }
+}
 body .middle_section .skills ul li:last-child {
   border-bottom: 1px solid grey;
 }
@@ -238,6 +284,11 @@ body .work_history {
 }
 body .work_history h5 {
   font-size: 2.75vw;
+}
+@media (max-width: 500px) {
+  body .work_history h5 {
+    font-size: 4vw;
+  }
 }
 body .work_history table {
   border-collapse: collapse;
@@ -254,6 +305,16 @@ body .work_history table td {
 }
 body .work_history table th {
   font-size: 2.55vw;
+}
+@media (max-width: 500px) {
+  body .work_history table th {
+    font-size: 3.5vw;
+  }
+}
+@media (max-width: 500px) {
+  body .work_history table td {
+    font-size: 3vw;
+  }
 }
 body .work_history table tr:last-child {
   border-bottom: 1px solid grey;
