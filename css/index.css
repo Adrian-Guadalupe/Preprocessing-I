@@ -135,7 +135,7 @@ body {
   height: 100%;
 }
 body {
-  margin: 2%;
+  margin: 4%;
 }
 nav {
   display: flex;
@@ -189,4 +189,79 @@ button {
 }
 button:hover {
   cursor: pointer;
+}
+.middle_section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+h3 {
+  font-size: 2.75vw;
+}
+h4 {
+  font-size: 2.75vw;
+}
+.description {
+  width: 48%;
+}
+.description p {
+  margin-top: 2%;
+}
+.skills {
+  width: 48%;
+}
+ul {
+  margin-top: 2%;
+  text-align: center;
+}
+li {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+li:last-child {
+  border-bottom: 1px solid grey;
+}
+.work_history {
+  margin-top: 4%;
+  width: 100%;
+}
+h5 {
+  font-size: 2.75vw;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 8%;
+}
+table,
+th,
+td {
+  border-top: 1px solid grey;
+}
+th,
+td {
+  height: 3rem;
+  text-align: center;
+  vertical-align: middle;
+}
+th {
+  font-size: 2.5vw;
+}
+tr:last-child {
+  border-bottom: 1px solid grey;
+}
+tr:nth-child(odd) {
+  background-color: #e9e8e8;
+}
+footer {
+  background-color: #747474;
+  color: white;
+  text-align: center;
+  padding-top: 1.55rem;
+  height: 4rem;
+  margin-bottom: 4%;
 }
