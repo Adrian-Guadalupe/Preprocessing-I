@@ -204,6 +204,16 @@ body header h2 {
 body header .aboutme {
   margin: 3%;
 }
+body header .aboutme p {
+  margin-bottom: 3%;
+}
+body header .aboutme a {
+  text-decoration: none;
+  margin-top: 3%;
+}
+body header .aboutme a:hover {
+  text-decoration: underline;
+}
 body header button {
   width: 15%;
   margin-left: 3%;
